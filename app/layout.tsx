@@ -15,7 +15,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <div
+          className={`content-center`}>
+        <p>All pages have this</p>
+        {children }
+          <p>All pages have that</p>
+        </div>
+      </body>
     </html>
   )
 }
